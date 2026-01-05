@@ -73,7 +73,6 @@ class AuthController extends Controller
             }
         }
 
-        // Jika request dari Web (Browser)
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
